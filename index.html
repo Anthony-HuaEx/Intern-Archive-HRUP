@@ -1,138 +1,269 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex, noarchive">
-    <title>Intern Archive Dashboard</title>
-    <meta name="description" content="Archive of intern newsletters and relocation documents.">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container">
-        <div class="brand">
-          <div class="logo" aria-hidden="true">IA</div>
-          <div>
-            <p class="eyebrow">Unofficial Intern 2026 Archive</p>
-            <h1>Archive Dashboard</h1>
-            <p class="subtitle">A simple hub for newsletters and relocation PDFs.</p>
-          </div>
-        </div>
-        <div class="header-actions">
-          <a class="btn btn-primary" href="#newsletters">Browse newsletters</a>
-          <a class="btn btn-light" href="#relocation">Relocation PDFs</a>
-        </div>
-      </div>
-    </header>
 
-    <main>
-      <section class="section" id="newsletters">
-        <div class="container">
-          <div class="section-header">
-            <div>
-              <h2>Archived Newsletters</h2>
-              <p>Each item links to an HTML newsletter page.</p>
-            </div>
-          </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, noarchive">
+  <title>Intern Archive Dashboard</title>
+  <meta name="description" content="Archive of intern newsletters and relocation documents.">
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-          <div class="grid">
-            <article class="card">
-              <div class="card-meta">
-                <span class="tag">Jan 2026</span>
-                <span class="tag tag-muted">HTML</span>
-              </div>
-              <h3>Welcome Week Highlights</h3>
-              <p>Key dates, onboarding links, and first-week resources.</p>
-              <div class="card-actions">
-                <a class="btn btn-primary" href="newsletters/January%20Newsletter.html">Open newsletter</a>
-                <a class="btn btn-link" href="newsletters/January%20Newsletter.html" target="_blank" rel="noopener">Open in new tab</a>
-              </div>
-            </article>
-
-            <article class="card card-note">
-              <div class="card-meta">
-                <span class="tag tag-muted">Add new</span>
-                <span class="tag tag-outline">newsletters</span>
-              </div>
-              <h3>How to add a newsletter</h3>
-              <p>Save an HTML file in <span class="inline-code">newsletters/</span> and add a new card here with its title and link.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-alt" id="relocation">
-        <div class="container">
-          <div class="section-header">
-            <div>
-              <h2>Relocation Documents (PDF)</h2>
-              <p>Location-specific PDFs that can be downloaded.</p>
-            </div>
-            <a class="btn btn-ghost" href="docs/README.txt">How to add PDFs</a>
-          </div>
-
-          <div class="grid">
-            <article class="card">
-              <div class="card-meta">
-                <span class="tag">New York</span>
-                <span class="tag tag-doc">PDF</span>
-              </div>
-              <h3>NYC Relocation Guide</h3>
-              <p>Housing options, transit tips, and arrival checklist.</p>
-              <div class="card-actions">
-                <a class="btn btn-primary" href="docs/nyc-relocation.pdf" download>Download PDF</a>
-              </div>
-            </article>
-
-            <article class="card">
-              <div class="card-meta">
-                <span class="tag">Austin</span>
-                <span class="tag tag-doc">PDF</span>
-              </div>
-              <h3>Austin Relocation Packet</h3>
-              <p>Neighborhood overview, parking info, and moving support.</p>
-              <div class="card-actions">
-                <a class="btn btn-primary" href="docs/austin-relocation.pdf" download>Download PDF</a>
-              </div>
-            </article>
-
-            <article class="card">
-              <div class="card-meta">
-                <span class="tag">Seattle</span>
-                <span class="tag tag-doc">PDF</span>
-              </div>
-              <h3>Seattle Relocation Handbook</h3>
-              <p>Weather tips, commuter benefits, and local resources.</p>
-              <div class="card-actions">
-                <a class="btn btn-primary" href="docs/seattle-relocation.pdf" download>Download PDF</a>
-              </div>
-            </article>
-
-            <article class="card card-note">
-              <div class="card-meta">
-                <span class="tag tag-muted">Add new</span>
-                <span class="tag tag-outline">PDFs</span>
-              </div>
-              <h3>How to add a PDF</h3>
-              <p>Drop the file into <span class="inline-code">docs/</span> and add a new card with the download link.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-content">
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">IA</div>
         <div>
-          <strong>Intern Archive Dashboard</strong>
-          <p>Published with GitHub Pages.</p>
-        </div>
-        <div class="footer-meta">
-          <span>Keep PDFs under 100 MB.</span>
-          <span>Update cards as you add files.</span>
+          <p class="eyebrow">Unofficial Intern 2026 Archive</p>
+          <h1>Archive Dashboard</h1>
+          <p class="subtitle">A simple hub for newsletters and relocation PDFs.</p>
         </div>
       </div>
-    </footer>
-  </body>
+      <div class="header-actions">
+        <a class="btn btn-primary" href="#newsletters">Browse newsletters</a>
+        <a class="btn btn-light" href="#relocation">Relocation docs</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="newsletters">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Archived Newsletters</h2>
+            <p>Each item links to an HTML newsletter page.</p>
+          </div>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <div class="card-meta">
+              <span class="tag">Jan 2026</span>
+              <span class="tag tag-muted">HTML</span>
+            </div>
+            <h3>Welcome Week Highlights</h3>
+            <p>Key dates, onboarding links, and first-week resources.</p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="newsletters/January%20Newsletter.html">Open newsletter</a>
+              <a class="btn btn-link" href="newsletters/January%20Newsletter.html" target="_blank" rel="noopener">Open
+                in new tab</a>
+            </div>
+          </article>
+
+
+          <!-- This is Documentation for the Next person who needs to do this or as a reminder for myself -->
+          <!-- <article class="card card-note">
+            <div class="card-meta">
+              <span class="tag tag-muted">Add new</span>
+              <span class="tag tag-outline">newsletters</span>
+            </div>
+            <h3>How to add a newsletter</h3>
+            <p>Save an HTML file in <span class="inline-code">newsletters/</span> and add a new card here with its title
+              and link.</p>
+          </article> -->
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="relocation">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Relocation Documents</h2>
+            <p>Location-specific PDFs plus related newsletter updates.</p>
+          </div>
+
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <div class="card-meta">
+              <span class="tag">Austin, TX</span>
+              <span class="tag tag-doc">PDF</span>
+              <span class="tag tag-muted">Draft</span>
+            </div>
+            <h3>Austin Relocation Guide (Draft)</h3>
+            <p>Location-specific housing, transit, and arrival tips.</p>
+            <div class="card-actions">
+              <a class="btn btn-primary"
+                href="Relocation%20Documents/Austin%20TX_Intern%20Relocation%20Guide_2026%20DRAFT.pdf" download>Download
+                PDF</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span class="tag">Burlington, VT</span>
+              <span class="tag tag-doc">PDF</span>
+            </div>
+            <h3>Burlington Relocation Guide</h3>
+            <p>Location-specific housing, transit, and arrival tips.</p>
+            <div class="card-actions">
+              <a class="btn btn-primary"
+                href="Relocation%20Documents/Burlington%2C%20VT_Intern%20Relocation%20Guide_2026.pdf" download>Download
+                PDF</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span class="tag">Chandler, AZ</span>
+              <span class="tag tag-doc">PDF</span>
+            </div>
+            <h3>Chandler Relocation Guide</h3>
+            <p>Location-specific housing, transit, and arrival tips.</p>
+            <div class="card-actions">
+              <a class="btn btn-primary"
+                href="Relocation%20Documents/Chandler%20AZ_Intern%20Relocation%20Guide_2026%20%281%29.pdf"
+                download>Download PDF</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span class="tag">Irvine, CA</span>
+              <span class="tag tag-doc">PDF</span>
+            </div>
+            <h3>Irvine Relocation Guide</h3>
+            <p>Location-specific housing, transit, and arrival tips.</p>
+            <div class="card-actions">
+              <a class="btn btn-primary"
+                href="Relocation%20Documents/Irvine%2C%20CA_Intern%20Relocation%20Guide_2026.pdf" download>Download
+                PDF</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span class="tag">Kanata, ON</span>
+              <span class="tag tag-doc">PDF</span>
+            </div>
+            <h3>Kanata Relocation Guide</h3>
+            <p>Location-specific housing, transit, and arrival tips.</p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="Relocation%20Documents/Kanata%20ON_Intern%20Relocation%20Guide_2026.pdf"
+                download>Download PDF</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span class="tag">Toronto (King St.), ON</span>
+              <span class="tag tag-doc">PDF</span>
+              <span class="tag tag-muted">Draft</span>
+            </div>
+            <h3>Toronto (King St.) Relocation Guide (Draft)</h3>
+            <p>Location-specific housing, transit, and arrival tips.</p>
+            <div class="card-actions">
+              <a class="btn btn-primary"
+                href="Relocation%20Documents/King%20St.%20Toronto%2C%20ON_Intern%20Relocation%20Guide_2026%20DRAFT%20%284%29.pdf"
+                download>Download PDF</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span class="tag">Markham, ON</span>
+              <span class="tag tag-doc">PDF</span>
+              <span class="tag tag-muted">Draft</span>
+            </div>
+            <h3>Markham Relocation Guide (Draft)</h3>
+            <p>Location-specific housing, transit, and arrival tips.</p>
+            <div class="card-actions">
+              <a class="btn btn-primary"
+                href="Relocation%20Documents/Markham%20ON_Intern%20Relocation%20Guide_2026%20DRAFT1%20%283%29.pdf"
+                download>Download PDF</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span class="tag">Morrisville, NC</span>
+              <span class="tag tag-doc">PDF</span>
+            </div>
+            <h3>Morrisville Relocation Guide</h3>
+            <p>Location-specific housing, transit, and arrival tips.</p>
+            <div class="card-actions">
+              <a class="btn btn-primary"
+                href="Relocation%20Documents/Morrisville%2C%20NC_Intern%20Relocation%20Guide_2026.pdf" download>Download
+                PDF</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span class="tag">Rochester, MN</span>
+              <span class="tag tag-doc">PDF</span>
+            </div>
+            <h3>Rochester Relocation Guide</h3>
+            <p>Location-specific housing, transit, and arrival tips.</p>
+            <div class="card-actions">
+              <a class="btn btn-primary"
+                href="Relocation%20Documents/Rochester%2C%20MN_Intern%20Relocation%20Guide_2026.pdf" download>Download
+                PDF</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span class="tag">Santa Clara, CA</span>
+              <span class="tag tag-doc">PDF</span>
+            </div>
+            <h3>Santa Clara Relocation Guide</h3>
+            <p>Location-specific housing, transit, and arrival tips.</p>
+            <div class="card-actions">
+              <a class="btn btn-primary"
+                href="Relocation%20Documents/Santa%20Clara%2C%20CA_Intern%20Relocation%20Guide_2026.pdf"
+                download>Download PDF</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span class="tag">Westlake Village, CA</span>
+              <span class="tag tag-doc">PDF</span>
+            </div>
+            <h3>Westlake Village Relocation Guide</h3>
+            <p>Location-specific housing, transit, and arrival tips.</p>
+            <div class="card-actions">
+              <a class="btn btn-primary"
+                href="Relocation%20Documents/Westlake%20Village%2C%20CA_Intern%20Relocation%20Guide_2026.pdf"
+                download>Download PDF</a>
+            </div>
+          </article>
+
+          <!-- This is Documentation for the Next person who needs to do this or as a reminder for myself -->
+          <!-- <article class="card card-note">
+            <div class="card-meta">
+              <span class="tag tag-muted">Add new</span>
+              <span class="tag tag-outline">PDFs</span>
+            </div>
+            <h3>How to add a PDF</h3>
+            <p>Drop the file into <span class="inline-code">Relocation Documents/</span> and add a new card with the
+              download link.</p>
+          </article> -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <strong>Intern Archive Dashboard</strong>
+        <p>Published with GitHub Pages.</p>
+      </div>
+      <div class="footer-meta">
+        <span>Keep PDFs under 100 MB.</span>
+        <span>Update cards as you add files.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

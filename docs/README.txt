@@ -1,11 +1,11 @@
 Relocation PDFs
 ---------------
 
-Place location-specific PDF files in this folder and update the links
-in index.html under "Relocation Documents (PDF)".
+Place location-specific PDF files in the Relocation Documents/ folder and update the links
+in index.html under "Relocation Documents".
 
 Suggested naming pattern:
-  city-relocation.pdf
+  City, ST_Intern Relocation Guide_2026.pdf
 
 Example:
-  nyc-relocation.pdf
+  Santa Clara, CA_Intern Relocation Guide_2026.pdf
